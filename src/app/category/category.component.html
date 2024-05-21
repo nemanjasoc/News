@@ -1,0 +1,10 @@
+<div *ngIf="categoryData">
+  <div *ngFor="let categoryNews of categoryData">
+    <h1>{{ categoryNews.title }}</h1>
+    <p>{{ categoryNews.content }}</p>
+  </div>
+</div>
+
+<div *ngIf="!categoryData">
+  <p>Category not found</p>
+</div>

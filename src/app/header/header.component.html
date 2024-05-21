@@ -1,0 +1,30 @@
+<header>
+  <div class="main-header">Independent news</div>
+  <nav mat-tab-nav-bar>
+    <a mat-tab-link routerLink="/category/politics" routerLinkActive #rla="routerLinkActive" [active]="rla.isActive">
+      Politics
+    </a>
+    <a mat-tab-link routerLink="/category/world" routerLinkActive #rla="routerLinkActive" [active]="rla.isActive">
+      World
+    </a>
+    <a mat-tab-link routerLink="/category/chronicle" routerLinkActive #rla="routerLinkActive" [active]="rla.isActive">
+      Chronicle
+    </a>
+    <a mat-tab-link routerLink="/category/business" routerLinkActive #rla="routerLinkActive" [active]="rla.isActive">
+      Business
+    </a>
+    <a mat-tab-link routerLink="/category/sport" routerLinkActive #rla="routerLinkActive" [active]="rla.isActive">
+      Sport
+    </a>
+    <a mat-tab-link routerLink="/category/entertainment" routerLinkActive #rla="routerLinkActive"
+      [active]="rla.isActive">
+      Entertainment
+    </a>
+    <a mat-tab-link routerLink="/category/health" routerLinkActive #rla="routerLinkActive" [active]="rla.isActive">
+      Health
+    </a>
+    <a mat-tab-link routerLink="/login" routerLinkActive #rla="routerLinkActive" [active]="rla.isActive">
+      Publish the news
+    </a>
+  </nav>
+</header>
