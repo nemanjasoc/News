@@ -1,7 +1,15 @@
-<div *ngIf="categoryData">
-  <div *ngFor="let categoryNews of categoryData">
-    <h1>{{ categoryNews.title }}</h1>
-    <p>{{ categoryNews.content }}</p>
+<div class="container" *ngIf="categoryData">
+  <div class="news-container" *ngFor="let categoryNews of categoryData">
+    <article class="news">
+      <img [src]="categoryNews.image ? categoryNews.image : './assets/images/avatar.jpeg'" />
+      <div class="news-text">
+        <h2>{{ categoryNews.title }}</h2>
+        <div class="news-info">
+          <span>{{ categoryNews.category | uppercase }}</span>
+          <time>{{ categoryNews.date }}</time>
+        </div>
+      </div>
+    </article>
   </div>
 </div>
 

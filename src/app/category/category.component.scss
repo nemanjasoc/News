@@ -1,0 +1,49 @@
+.news-container {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.news {
+  display: flex;
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 5px;
+  background: #fff;
+
+  img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+  }
+}
+
+.news-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: calc(100% - 150px);
+  margin-left: 15px;
+
+  h2 {
+    margin: 0;
+    font-size: 20px;
+    line-height: 26px;
+    font-weight: 700;
+    max-height: 104px;
+    overflow: hidden;
+    letter-spacing: .5px;
+    // font-family: "Merriweather", serif;
+  }
+}
+
+.news-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 10px;
+
+  span {
+    font-size: 14px;
+    color: #2c037d;
+  }
+}

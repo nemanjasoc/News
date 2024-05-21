@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { AsyncPipe, NgFor, NgIf } from '@angular/common';
+import { AsyncPipe, CommonModule, NgFor, NgIf } from '@angular/common';
 import { NewsApiService } from '../core/services/news-api.service';
 
 @Component({
@@ -8,7 +8,7 @@ import { NewsApiService } from '../core/services/news-api.service';
   templateUrl: './category.component.html',
   styleUrl: './category.component.scss',
   standalone: true,
-  imports: [AsyncPipe, NgIf, NgFor],
+  imports: [CommonModule, AsyncPipe, NgIf, NgFor],
 })
 export class CategoryComponent implements OnInit {
   category!: string | null;
